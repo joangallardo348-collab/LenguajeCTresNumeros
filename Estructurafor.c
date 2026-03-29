@@ -9,9 +9,17 @@ int main(){
     printf("Ingrese el valor de Incremento: ");
     scanf("%i", &valorIncremento);
     
+    if(numeroInicial>0 && numeroFinal>0 && valorIncremento>0){
     int i=0;
-    for(i=numeroInicial;i<=numeroFinal;i=i+valorIncremento){
-        printf("%i ", i);
+        for(i=numeroInicial;i<=numeroFinal;i=i+valorIncremento){
+            printf("%i ", i);
+        }
+
     }
+    else{
+        printf("Los valores ingresados deben ser mayores a 0");
+
+    }
+   
     return 0;
 }
