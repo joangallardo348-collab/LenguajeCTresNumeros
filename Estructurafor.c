@@ -11,7 +11,7 @@ int main(){
     
     int i=0;
     for(i=numeroInicial;i<=numeroFinal;i=i+valorIncremento){
-        printf("%i", i);
+        printf("%i ", i);
     }
     return 0;
 }
