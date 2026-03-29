@@ -10,16 +10,18 @@ int main(){
     scanf("%i", &valorIncremento);
     
     if(numeroInicial>0 && numeroFinal>0 && valorIncremento>0){
-    int i=0;
-        for(i=numeroInicial;i<=numeroFinal;i=i+valorIncremento){
-            printf("%i ", i);
+        if(numeroFinal>numeroInicial){
+            int i=0;
+            for(i=numeroInicial;i<=numeroFinal;i=i+valorIncremento){
+                printf("%i ", i);
+            }
         }
-
+        else{
+            printf("El numero final debe ser mayor al numero inicial");
+        }
     }
     else{
         printf("Los valores ingresados deben ser mayores a 0");
-
-    }
-   
+    }   
     return 0;
 }
